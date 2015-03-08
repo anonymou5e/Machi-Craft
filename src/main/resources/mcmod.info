@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "burnsyladboy_machicraft",
+  "name": "MachiCraft",
+  "description": "A tech based mod.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["Max_B_"],
+  "credits": "TheXFactor117, for making a tutorial on how to make mods",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []

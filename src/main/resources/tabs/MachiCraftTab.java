@@ -20,7 +20,7 @@ String name;
     public Item getTabIconItem()
     {
         if (this.name == "tabMachiCraft") {
-            return ModItems.copperIngot;
+            return ModItems.electroMagnet;
         }
 	return null;
 }

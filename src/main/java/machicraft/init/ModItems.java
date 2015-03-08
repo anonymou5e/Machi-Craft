@@ -1,13 +1,7 @@
 package machicraft.init;
 
 import machicraft.help.RegisterHelper;
-import machicraft.items.ItemCopperIngot;
-import machicraft.items.ItemCopperNugget;
-import machicraft.items.ItemCopperWire;
-import machicraft.items.ItemElectroMagnet;
-import machicraft.items.ItemIronBar;
-import machicraft.items.ItemTungstenIngot;
-import machicraft.items.ItemTungstenNugget;
+import machicraft.items.*;
 import net.minecraft.item.Item;
 
 public class ModItems {
@@ -18,6 +12,8 @@ public class ModItems {
 	public static Item ironBar = new ItemIronBar().setUnlocalizedName("ironBar");
 	public static Item tungstenIngot = new ItemTungstenIngot().setUnlocalizedName("tungstenIngot");
 	public static Item tungstenNugget = new ItemTungstenNugget().setUnlocalizedName("tungstenNugget");
+	public static Item tinIngot = new ItemTinIngot().setUnlocalizedName("tinIngot");
+	public static Item tinNugget = new ItemTinNugget().setUnlocalizedName("tinNugget");
 
 	public static void init() {
 	    RegisterHelper.registerItem(copperIngot);
@@ -27,6 +23,8 @@ public class ModItems {
 	    RegisterHelper.registerItem(ironBar);
 	    RegisterHelper.registerItem(tungstenIngot);
 	    RegisterHelper.registerItem(tungstenNugget);
+	    RegisterHelper.registerItem(tinIngot);
+	    RegisterHelper.registerItem(tinNugget);
 	}
 }
 

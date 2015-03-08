@@ -22,8 +22,9 @@ public class MachiCraftWorldGeneration implements IWorldGenerator {
         }
         
         private void generateSurface(World world, Random random, int x, int z) {
-        	addOreSpawn(ModBlocks.copperOre, world, random, x, z, 16, 16, 4 + random.nextInt(5), 25, 0, 48);
+        	addOreSpawn(ModBlocks.copperOre, world, random, x, z, 16, 16, 4 + random.nextInt(3), 25, 0, 48);
         	addOreSpawn1(ModBlocks.tungstenOre, world, random, x, z, 16, 16, 2 + random.nextInt(3), 10, 0, 25);
+        	addOreSpawn2(ModBlocks.tinOre, world, random, x, z, 16, 16, 4 + random.nextInt(3), 25, 0, 35);
         }
 
         private void generateNether(World world, Random random, int x, int z) {
@@ -47,7 +48,14 @@ public class MachiCraftWorldGeneration implements IWorldGenerator {
                  int posX = blockXPos + random.nextInt(maxX);
                  int posY = minY + random.nextInt(maxY - minY);
                  int posZ = blockZPos + random.nextInt(maxZ);
-                 new WorldGenMinable(block, maxVeinSize).generate(world, random, posX, posY, posZ);
+                 new WorldGenMinable(block, maxVeinSize).generate(world, random, posX, posY, posZ); }
              }
+         private void addOreSpawn2(Block block, World world, Random random, int blockXPos, int blockZPos, int maxX, int maxZ, int maxVeinSize, int chanceToSpawn, int minY, int maxY) {
+             for (int i = 0; i < chanceToSpawn; i++) {
+                int posX = blockXPos + random.nextInt(maxX);
+                int posY = minY + random.nextInt(maxY - minY);
+                int posZ = blockZPos + random.nextInt(maxZ);
+                new WorldGenMinable(block, maxVeinSize).generate(world, random, posX, posY, posZ);
+            }
         }
 	}

@@ -25,9 +25,11 @@ public class ModRecipes {
 		GameRegistry.addShapedRecipe(new ItemStack(ModItems.ironBar, 2), new Object[] {" A ", " A ", " A ", 'A', Items.iron_ingot});
 		GameRegistry.addShapedRecipe(new ItemStack(ModItems.ironBar, 2), new Object[] {"A  ", "A  ", "A  ", 'A', Items.iron_ingot});
 		GameRegistry.addShapedRecipe(new ItemStack(ModItems.electroMagnet), new Object[] {"ABA", "ABA", "ABA", 'A', ModItems.copperWire, 'B', ModItems.ironBar});
+		GameRegistry.addShapedRecipe(new ItemStack(ModItems.tinIngot), new Object[] {"AAA", "AAA", "AAA", 'A', ModItems.tinNugget});
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.copperNugget, 9), new Object[] {new ItemStack(ModItems.copperIngot)});
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.copperIngot, 9), new Object[] {new ItemStack(ModBlocks.copperBlock)});
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.tungstenNugget, 9), new Object[] {new ItemStack(ModItems.tungstenIngot)});
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.tinNugget, 9), new Object[] {new ItemStack(ModItems.tinIngot)});
 	}
 }
