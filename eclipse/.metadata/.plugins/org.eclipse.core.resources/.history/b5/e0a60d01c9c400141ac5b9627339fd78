@@ -1,0 +1,25 @@
+package machicraft.tabs;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import machicraft.init.ModItems;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
+public class MachiCraftTab {
+	String name;
+    
+	public MachiCraftTab(int par1, String par2Str) {
+        super();
+        this.name = par2Str;
+    }
+    
+    @SideOnly(Side.CLIENT)
+    public Item getTabIconItem() {
+        if (this.name == "tabMachiCraft") {
+            return ModItems.copperIngot;
+        }
+		return null;
+    }
+
+}

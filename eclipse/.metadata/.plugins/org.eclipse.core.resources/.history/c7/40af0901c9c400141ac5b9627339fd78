@@ -1,0 +1,7 @@
+package machicraft.tabs;
+
+import net.minecraft.creativetab.CreativeTabs;
+
+public class ModTabs {
+	public static CreativeTabs tabMachiCraft = new CreativeTabs(CreativeTabs.getNextID(), "tabMachiCraft");
+}

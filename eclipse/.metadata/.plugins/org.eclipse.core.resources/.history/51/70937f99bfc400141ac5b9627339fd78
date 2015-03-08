@@ -1,0 +1,11 @@
+package machicraft.items;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
+public class MachiCraftItem extends Item {
+	public MachiCraftItem() {
+        super();
+        setCreativeTab(CreativeTabs.tabMaterials);
+    }
+}

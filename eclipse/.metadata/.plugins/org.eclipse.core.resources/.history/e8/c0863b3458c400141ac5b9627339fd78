@@ -1,0 +1,11 @@
+package machicraft.init;
+
+import net.minecraft.item.Item;
+
+public class ModItems {
+	public static Item copperIngot = new MachiCraftItems().setUnlocalizedName("copperIngot");
+}
+
+public static void init() {
+    RegisterHelper.registerItems(copperIngot);
+}

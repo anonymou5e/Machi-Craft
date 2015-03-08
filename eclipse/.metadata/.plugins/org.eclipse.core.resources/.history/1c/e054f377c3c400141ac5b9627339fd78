@@ -1,0 +1,13 @@
+package machicraft.init;
+
+import machicraft.blocks.BlockCopperOre;
+import machicraft.help.RegisterHelper;
+import net.minecraft.block.Block;
+
+public class ModBlocks {
+	public static Block copperOre = new BlockCopperOre();  
+	
+	 public static void init() {
+           RegisterHelper.registerBlock(copperOre);
+     }
+}

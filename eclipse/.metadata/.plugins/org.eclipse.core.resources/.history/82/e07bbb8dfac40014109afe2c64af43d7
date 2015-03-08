@@ -1,0 +1,12 @@
+package crafting;
+
+import machicraft.init.ModBlocks;
+import machicraft.init.ModItems;
+import net.minecraft.item.ItemStack;
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class ModRecipies {
+	public static void init() {
+	GameRegistry.addSmelting(ModBlocks.copperOre, new ItemStack(ModItems.copperIngot), 0.8F);
+	}
+}

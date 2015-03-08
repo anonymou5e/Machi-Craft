@@ -1,0 +1,6 @@
+package machicraft.items;
+
+
+public class ItemAscension implements Item {
+
+}

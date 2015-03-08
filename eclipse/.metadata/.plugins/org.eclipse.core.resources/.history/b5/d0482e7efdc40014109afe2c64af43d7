@@ -1,0 +1,17 @@
+package machicraft.init;
+
+import machicraft.help.RegisterHelper;
+import machicraft.items.ItemCopperIngot;
+import machicraft.items.ItemCopperWire;
+import net.minecraft.item.Item;
+
+public class ModItems {
+	public static Item copperIngot = new ItemCopperIngot().setUnlocalizedName("copperIngot");
+	public static Item copperWire = new ItemCopperWire().setUnlocalizedName("copperWire");
+
+	public static void init() {
+	    RegisterHelper.registerItem(copperIngot);
+	    RegisterHelper.registerItem(copperWire);
+	}
+}
+

@@ -1,0 +1,24 @@
+package machicraft;
+
+import machicraft.help.RegisterHelper;
+import machicraft.init.ItemMachiCraftAxe;
+import machicraft.init.ItemMachiCraftShovel;
+import machicraft.init.ItemMachiCraftSword;
+import machicraft.items.ItemMachiCraftPickaxe;
+import net.minecraft.item.Item;
+
+public enum EnumCOPPER {
+static Item.ToolMaterial COPPER = EnumHelper.addToolMaterial("COPPER", 2, 215, 2.0F, 0.0F, 14);
+	
+	public static Item copperSword = new ItemMachiCraftSword(COPPER).setUnlocalizedName("copperSword");
+    public static Item copperPick = new ItemMachiCraftPickaxe(COPPER).setUnlocalizedName("copperPick");
+    public static Item copperShovel = new ItemMachiCraftShovel(COPPER).setUnlocalizedName("copperShovel");
+    public static Item copperAxe = new ItemMachiCraftAxe(COPPER).setUnlocalizedName("copperAxe");
+    
+    public static void init() {
+    	RegisterHelper.registerItem(copperSword);
+        RegisterHelper.registerItem(copperPick);
+        RegisterHelper.registerItem(copperShovel);
+        RegisterHelper.registerItem(copperAxe);
+    }
+}

@@ -1,0 +1,12 @@
+package machicraft.blocks;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+
+public class BlockCopperOre extends Block {
+	public BlockCopperOre() {
+            super(Material.iron);
+            setCreativeTab(CreativeTabs.tabBlock);
+    }
+}

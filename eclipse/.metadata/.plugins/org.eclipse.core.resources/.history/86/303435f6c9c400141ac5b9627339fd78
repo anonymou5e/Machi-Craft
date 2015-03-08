@@ -1,0 +1,14 @@
+package tabs;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
+public class MachiCraftTab extends CreativeTabs {
+
+	@Override
+	public Item getTabIconItem() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

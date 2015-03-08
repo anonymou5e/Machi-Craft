@@ -1,0 +1,14 @@
+item.copperIngot.name=Copper Ingot
+item.copperPick.name=Copper Pickaxe
+item.copperWire.name=Copper Wire
+item.copperNugget.name=Copper Nugget
+item.electroMagnet.name=Electro-Magnet
+item.ironBar.name=Iron Bar
+item.tungstenIngot.name=Tungsten Ingot
+item.copperAxe.name=Copper Axe
+
+tile.copperOre.name=Copper Ore
+tile.copperBlock.name=Block of Copper
+tile.tungstenOre.name=Tungsten Ore
+
+itemGroup.tabMachiCraft=MachiCraft

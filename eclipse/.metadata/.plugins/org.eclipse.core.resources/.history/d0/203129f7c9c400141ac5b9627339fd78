@@ -1,0 +1,15 @@
+package machicraft.blocks;
+
+import machicraft.help.Reference;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+
+public class BlockCopperOre extends Block {
+	public BlockCopperOre() {
+        super(Material.iron);
+        setCreativeTab(CreativeTabs.tabBlock);
+        setBlockName("copperOre");
+        setBlockTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
+    }
+}

@@ -1,0 +1,8 @@
+item.copperIngot.name=Copper Ingot
+item.copperPick.name=Copper Pickaxe
+item.copperWire.name=Copper Wire
+item.copperNugget.name=Copper Nugget
+
+tile.copperOre.name=Copper Ore
+
+itemGroup.tabMachiCraft=MachiCraft
